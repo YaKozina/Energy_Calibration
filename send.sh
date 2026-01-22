@@ -11,16 +11,14 @@ INDEX=$1
 
 source /sps/nemo/scratch/chauveau/software/falaise/develop/this_falaise.sh
 
-OUT_BASE="/sps/nemo/scratch/ykozina/Falaise/tutorial/CalibrationScript/Tutorial" 
-
 ##############################################################################	
 #1) Charge2Energy (applies calibration on brio with CD&PTD banks)	
 ##############################################################################
 
 /sps/nemo/scratch/chauveau/software/falaise/develop/install/bin/flreconstruct \
--i reco-PTD_1556-100.brio \
--p /sps/nemo/scratch/ykozina/Falaise/tutorial/CalibrationScript/build/Charge2EnergyModule/charge2energy.conf \
--o reco-PTD_1556-100-c2e.brio
+-i reco-PTD.brio \
+-p /.../CalibrationScript/build/Charge2EnergyModule/charge2energy.conf \
+-o reco-PTD-c2e.brio
 
 
 #end
